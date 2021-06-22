@@ -59,7 +59,8 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> 
         }
 
         public void bind(String item) {
-            textViewItem.setText(item);
+            textViewItem.setText("✔️ " + item);
+            textViewItem.setTextSize(20);
             textViewItem.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
