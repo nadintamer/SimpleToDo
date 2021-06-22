@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         editTextItem = findViewById(R.id.editTextItem);
         recyclerViewItems = findViewById(R.id.recyclerViewItems);
 
+        getSupportActionBar().setTitle("Simple To Do");
+
         loadItems();
 
         ItemsAdapter.onLongClickListener onLongClickListener = new ItemsAdapter.onLongClickListener() {
@@ -72,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String newItem = editTextItem.getText().toString();
+                if (newItem.isEmpty()) return;
                 items.add(newItem);
                 itemsAdapter.notifyItemInserted(items.size() - 1);
                 editTextItem.setText("");
@@ -83,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == EDIT_TEXT_CODE && resultCode == RESULT_OK) {
             String updatedText = data.getStringExtra(KEY_ITEM_TEXT);
             int position = data.getExtras().getInt(KEY_ITEM_POSITION);
