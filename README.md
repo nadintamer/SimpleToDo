@@ -1,10 +1,18 @@
 # Project 1 - Simple To Do
 
-**Simple To Do** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+**Simple To Do** is an Android app that allows building a to-do list and basic to-do management functionality including adding new items, editing and deleting an existing item.
 
 Submitted by: **Nadin Tamer**
 
 Time spent: **3** hours spent in total
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://i.imgur.com/71OxxIA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LICEcap](http://www.cockos.com/licecap/).
 
 ## User Stories
 
@@ -21,14 +29,6 @@ The following **bonus** features are implemented:
 The following **additional** features are implemented:
 
 * [ ] List anything else that you can get done to improve the app functionality!
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='https://i.imgur.com/71OxxIA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LICEcap](http://www.cockos.com/licecap/).
 
 ## Notes
 
